@@ -1,31 +1,59 @@
 .textContainer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  color: white;
-  height: 60%;
-  justify-content: space-between;
+  gap: 10px;
+  margin-left:20px;
+  border-radius: 20px;
+  box-shadow :10px 10px 10px rgba(0,0,0,0.4);
+
 }
 
 .activeContainer {
   display: flex;
-  align-items: center;
-  margin-bottom: 50%;
+  flex-direction: column;
 }
 
 .activeItem {
   display: flex;
   align-items: center;
+  gap: 10px;
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.activeContainer img {
-  padding-left: 10px;
-}
+@media (max-width: 768px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
 
-.textContainer h1 {
-  margin-bottom: 0px;
-}
+  .infoBar {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .form {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sendButton {
+    width: 100%;
+  }
+
+  .textContainer {
+    display: none;
+  }
+}
 @media (min-width: 320px) and (max-width: 1200px) {
   .textContainer {
     display: none;

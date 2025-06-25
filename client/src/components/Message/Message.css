@@ -1,45 +1,14 @@
-.messageBox {
-  background: #F3F3F3;
-  border-radius: 20px;
-  padding: 5px 20px;
-  color: white;
-  display: inline-block;
-  max-width: 80%;
-}
-
-.messageText {
-  width: 100%;
-  letter-spacing: 0;
-  float: left;
-  font-size: 1.1em;
-  word-wrap: break-word;
-}
-
-.messageText img {
-  vertical-align: middle;
-}
-
 .messageContainer {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 5%;
-  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
-.sentText {
-  display: flex;
-  align-items: center;
-  font-family: Helvetica;
-  color: #828282;
-  letter-spacing: 0.3px;
-}
-
-.pl-10 {
-  padding-left: 10px;
-}
-
-.pr-10 {
-  padding-right: 10px;
+.messageBox {
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  max-width: 70%;
+  word-break: break-word;
 }
 
 .justifyStart {
@@ -50,18 +19,18 @@
   justify-content: flex-end;
 }
 
-.colorWhite {
+.backgroundBlue {
+  background-color: #3498db;
   color: white;
 }
 
-.colorDark {
-  color: #353535;
-}
-
-.backgroundBlue {
-  background: #095ff2;
-}
-
 .backgroundLight {
-  background: #F3F3F3;
+  background-color: #ecf0f1;
+  color: black;
+}
+
+.sentText {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin: 0 10px;
 }

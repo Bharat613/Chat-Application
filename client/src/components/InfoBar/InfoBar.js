@@ -11,7 +11,7 @@ const InfoBar = ({ room }) => (
       <h3>Room ID : {room}</h3>
     </div>
     <div className="rightInnerContainer">
-      <a href="/">Exit Room <img src={closeIcon} alt="close icon" /></a>
+      <a id="exit" href="/">Exit Room <img id="close" src={closeIcon} alt="close icon" /></a>
     </div>    
   </div>
 );
