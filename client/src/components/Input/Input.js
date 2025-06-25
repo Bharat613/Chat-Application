@@ -23,7 +23,11 @@ const Input = ({ message, setMessage, sendMessage }) => {
         onChange={(event) => setMessage(event.target.value)}
         onKeyDown={handleKeyDown}
       />
+<<<<<<< HEAD
       <button className='sendButton' type='submit'>Send&nbsp;&nbsp;&nbsp;  <i style={{ fontSize: '20px' }} className="fa-solid fa-paper-plane"></i>
+=======
+      <button className='sendButton' type='submit'>Send<i style={{ fontSize: '20px' }} className="fa-solid fa-paper-plane"></i>
+>>>>>>> 6119d6f (updated css)
 </button>
     </form>
   );
