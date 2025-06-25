@@ -6,6 +6,10 @@ import './TextContainer.css';
 
 const TextContainer = ({ users }) => (
   <div className="textContainer">
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 1e0655ae4aa2b05c3d63b671dc540622fc19ea82
     {
       users
         ? (
