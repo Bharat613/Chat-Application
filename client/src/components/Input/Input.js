@@ -21,9 +21,10 @@ const Input = ({ message, setMessage, sendMessage }) => {
         placeholder='Type a message'
         value={message}
         onChange={(event) => setMessage(event.target.value)}
-        onKeyDown={handleKeyDown} // ✅ Replace onKeyPress with onKeyDown
+        onKeyDown={handleKeyDown}
       />
-      <button className='sendButton' type='submit'>Send</button>
+      <button className='sendButton' type='submit'>Send&nbsp;&nbsp;&nbsp;  <i style={{ fontSize: '20px' }} className="fa-solid fa-paper-plane"></i>
+</button>
     </form>
   );
 };
