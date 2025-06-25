@@ -17,7 +17,7 @@ const Chat = () => {
   const [users, setUsers] = useState('');
 
     const [messages,setMessages] = useState([])
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://chat-application-backend-wcoc.onrender.com/';
 
   const location = useLocation();
   useEffect(()=>{
