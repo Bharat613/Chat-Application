@@ -14,7 +14,7 @@ const io = socketio(server, {
   cors: {
    origin: [
       "http://localhost:3000",
-      // "https://chat-application-sepia-five.vercel.app"
+      "https://chat-application-sepia-five.vercel.app"
     ],
     methods: ["GET", "POST"]
   }
