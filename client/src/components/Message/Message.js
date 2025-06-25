@@ -22,7 +22,7 @@ return(
             <div className='messageBox backgroundLight'>
                 <p className='messagetext colorDark'>{ReactEmoji.emojify(text)}</p>
             </div>
-        <p className='sentText pl-10'>{trimmedName}</p>
+        <p className='sentText pl-10'>{user}</p>
 
         </div>
     )
