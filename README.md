@@ -98,6 +98,11 @@ Optional Features (Bonus)
 - Online status (implemented)
 - Deployment to cloud platforms (done)
 
+Live Demo
+
+Frontend: https://chat-application-sepia-five.vercel.app  
+Backend: Hosted on Render
+
 Author
 
 Bharat Siva  
