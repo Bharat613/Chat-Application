@@ -30,7 +30,7 @@
 }
 
 .container {
-  min-height: 90vh;
+  min-height: 89vh;
 
 }
 
@@ -51,9 +51,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: fixed;
-  top:80px;
-  height : 50vh !important;
+  margin-top:81px;
+  height : 70vh !important;
 }
 
 

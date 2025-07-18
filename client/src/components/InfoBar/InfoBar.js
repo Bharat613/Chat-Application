@@ -9,9 +9,12 @@ const InfoBar = ({ room }) => (
       <img className="onlineIcon" src={onlineIcon} alt="online icon" />
       <h3>Room ID : {room}</h3>
     </div>
+    <p className='encrypt' style={{fontWeight:"400",fontSize:"15px"}}>end-to-end encrypted <i class="fa-solid fa-lock"></i></p> 
+    
     <div className="rightInnerContainer">
       <a id="exit" href="/">Exit Room</a>
-    </div>    
+    </div>  
+     
   </div>
 );
 

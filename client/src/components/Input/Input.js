@@ -14,7 +14,7 @@ const Input = ({ message, setMessage, sendMessage }) => {
   };
 
   return (
-    <form className='form' onSubmit={handleSubmit}>
+<form className='form' onSubmit={handleSubmit}>
       <input
         className='input'
         type='text'
@@ -26,6 +26,7 @@ const Input = ({ message, setMessage, sendMessage }) => {
       <button className='sendButton' type='submit'>Send<i style={{ fontSize: '20px' }} className="fa-solid fa-paper-plane"></i>
 </button>
     </form>
+    
   );
 };
 

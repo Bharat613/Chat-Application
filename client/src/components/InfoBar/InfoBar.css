@@ -99,4 +99,10 @@ a:hover img{
     position: fixed;
     left : 10px;
   }
+  .encrypt{
+    font-size: 10px !important;
+    margin-top: 50px;
+    position: fixed;
+    left : 40px;
+  }
 }
