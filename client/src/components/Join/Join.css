@@ -20,6 +20,11 @@ html, body {
   align-items: center;
   background:url('https://t4.ftcdn.net/jpg/06/20/09/91/360_F_620099106_87XhpxWUWwNSENwYl3mgc754k1Gpppgb.jpg');
 /* background-color: black; */
+position: fixed;
+top : 0;
+left : 0;
+right : 0;
+bottom :0;
 
 }
 
