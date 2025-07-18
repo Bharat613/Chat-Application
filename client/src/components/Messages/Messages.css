@@ -1,6 +1,13 @@
 .messages {
   flex: 1;
-  padding: 20px;
+  padding: 0px;
   overflow-y: auto;
-  background-color: #f7f7f7;
+  background-image: url('https://i.pinimg.com/736x/6a/8e/a0/6a8ea0ed32ebef5f8fd50dfdd2523b10.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    left : 0px;
+    right:0px;
+    top:0px;
 }

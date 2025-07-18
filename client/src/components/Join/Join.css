@@ -20,6 +20,7 @@ html, body {
   align-items: center;
   background:url('https://t4.ftcdn.net/jpg/06/20/09/91/360_F_620099106_87XhpxWUWwNSENwYl3mgc754k1Gpppgb.jpg');
 /* background-color: black; */
+
 }
 
 .joinInnerContainer {
@@ -28,7 +29,7 @@ html, body {
   padding : 40px;
   background-color: rgb(241, 239, 237);
   border-radius: 20px;
-  box-shadow: 30px 30px 30px rgb(14, 14, 14);
+  box-shadow: 0px 0px 50px rgb(8, 8, 8);
 }
 
 .joinInput {
@@ -37,10 +38,11 @@ html, body {
   width: 100%;
   border-radius: 10px;
   font-size: 19px;
+  border: 0;
 }
 
 .heading {
-  
+  margin: 0;
   color: rgb(11, 11, 11);
   font-size: 2.5em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,16 +57,17 @@ html, body {
     text-decoration: none;
     background: #050505;
     color: aliceblue;
-    padding: 15px;
+    padding: 13px;
     border-radius: 5px;
     display: inline-block;
     border: none;
-    width: 60% !important;
+    width: 40% !important;
     transition: all 0.5s ease;
-    font-size: 1.07rem;
+    font-size: 0.5rem;
+    cursor: pointer;
 }
 .button:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .button i{
   margin-left: 10px;
@@ -81,7 +84,11 @@ html, body {
     position : fixed;
     width: 100%;
   }
-
+.heading{
+  padding: 10px;
+  font-size: 30px;
+   padding: 10px 0px;
+}
   .joinInnerContainer {
     width: 84%;
     height : 300px;
@@ -90,8 +97,9 @@ html, body {
   .button{
     width : 200px !important;
     padding: 10px;
-    font-size: 13px;
+    font-size: 11px;
   }
+ 
 .joinInput{
   padding:10px;
   font-size: 15px;;

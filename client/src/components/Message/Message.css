@@ -1,10 +1,11 @@
 .messageContainer {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: px;
+  padding:10px;
 }
 
 .messageBox {
-  padding: 15px 20px;
+  padding: 0px 10px;
   border-radius: 10px;
   font-size: 1rem;
   max-width: 70%;
@@ -20,12 +21,13 @@
 }
 
 .backgroundBlue {
-  background-color: #3498db;
+  background-color: #58abe2;
   color: white;
 }
 
 .backgroundLight {
   background-color: #ecf0f1;
+  
   color: black;
 }
 
@@ -33,4 +35,14 @@
   font-size: 0.8rem;
   color: #7f8c8d;
   margin: 0 10px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .messageBox {
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  max-width: 70%;
+  word-break: break-word;
+  
+}
 }
