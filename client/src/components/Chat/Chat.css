@@ -31,6 +31,7 @@
 
 .container {
   min-height: 90vh;
+
 }
 
 
@@ -51,6 +52,7 @@
   flex-direction: column;
   overflow: hidden;
   position: fixed;
+  top:80px;
 }
 
 
