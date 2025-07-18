@@ -1,6 +1,7 @@
 *{
   font-family: poppins;
 }
+
 .outerContainer {
   display: flex;
   justify-content: center;
@@ -8,7 +9,7 @@
   height: 100vh;
   background: linear-gradient(to right, #1f1c2c, #8d84b9);
   padding: 20px;
-  
+ 
 }
 
 .container {
@@ -38,6 +39,11 @@
     height: 100%;
     border-radius: 0px;
     padding:0px;
+     position : sticky;
+  right :0;
+  left :0;
+  top : 0;
+  bottom:0;
   }
 
   .container {
