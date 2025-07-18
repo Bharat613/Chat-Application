@@ -1,4 +1,4 @@
-/* .infoBar {
+.infoBar {
 background-color: #0e0d0d;
   color: #ecf0f1;
   display: flex;
@@ -10,22 +10,8 @@ background-color: #0e0d0d;
   align-content: center;
   justify-content: center;
   position: relative;
-} */
-.infoBar {
-  background-color: #0e0d0d;
-  color: #ecf0f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
 }
+
 
 .leftInnerContainer,
 .rightInnerContainer {
@@ -66,12 +52,15 @@ a:hover img{
   width : 15px;
 }
 @media (max-width: 768px) {
-  .infoBar {
+   .infoBar {
     height: 80px;
     padding: 0px;
     text-align: center;
-    position: sticky;
-    top :0px;
+    position: fixed; /* FIXED here too */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   .leftInnerContainer,
