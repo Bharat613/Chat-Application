@@ -1,3 +1,16 @@
+/* .infoBar {
+background-color: #0e0d0d;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+} */
 .infoBar {
   background-color: #0e0d0d;
   color: #ecf0f1;
@@ -7,13 +20,12 @@
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 }
-
 
 .leftInnerContainer,
 .rightInnerContainer {
