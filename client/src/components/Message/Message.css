@@ -1,6 +1,14 @@
+* {
+  box-sizing: border-box;
+}
 .messageContainer {
   display: flex;
   padding:10px;
+  align-items: flex-end; /* NEW */
+  flex-direction: row;
+    margin-bottom: 5px;
+
+
 }
 
 .messageBox {
