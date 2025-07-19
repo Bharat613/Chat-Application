@@ -1,12 +1,13 @@
 .messageContainer {
   display: flex;
+  margin-bottom: px;
   padding:10px;
 }
 
 .messageBox {
   padding: 0px 10px;
   border-radius: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   max-width: 70%;
   word-break: break-word;
 }
@@ -39,7 +40,7 @@
   .messageBox {
   padding: 0px 10px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   max-width: 70%;
   word-break: break-word;
   
