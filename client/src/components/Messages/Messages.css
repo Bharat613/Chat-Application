@@ -9,4 +9,5 @@
   background-repeat: no-repeat;
 
   position: relative; /* Not fixed */
+  margin-top:-2px;
 }
