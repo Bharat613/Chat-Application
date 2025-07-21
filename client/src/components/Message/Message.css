@@ -28,8 +28,9 @@
 }
 
 .backgroundBlue {
-  background-color: #58abe2;
-  color: white;
+  background-color: #36ee7d;
+  color: black;
+  font-weight: 500;
 }
 
 .backgroundLight {
@@ -40,7 +41,8 @@
 
 .sentText {
   font-size: 0.8rem;
-  color: #7f8c8d;
+  /* color: #7f8c8d; */
+  color: rgb(138, 139, 138);
   margin: 0 10px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -51,5 +53,8 @@
   max-width: 70%;
   word-break: break-word;
   
+}
+.sentText{
+  font-size: 0.6rem;
 }
 }
