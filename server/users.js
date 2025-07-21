@@ -1,8 +1,17 @@
+const UserModel = require("./models/user");
+
 const users = [];
 
-const addUser = ({ id, name, room }) => {
+const addUser = async ({ id, name, room }) => {
   name = name.trim().toLowerCase();
   room = room.trim().toLowerCase();
+  console.log("hello i am here")
+  try {
+      const savedUser = await UserModel.create({ socketId: id, name, room });
+      console.log('User saved:', savedUser);
+    } catch (err) {
+      console.error('MongoDB insert error:', err);
+    }
 
   const existingUser = users.find((user) => user.room === room && user.name === name);
 

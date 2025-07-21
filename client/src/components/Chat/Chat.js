@@ -20,29 +20,42 @@ const Chat = () => {
 const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
   const location = useLocation();
-  useEffect(()=>{
-      const {name, room} = queryString.parse(location.search)
-      socket = io(ENDPOINT);
-      setName(name);
-      setRoom(room);
+  useEffect(() => {
+  const { name, room } = queryString.parse(location.search);
+  socket = io(ENDPOINT, {
+    transports: ['websocket'], // Optional but helps avoid polling issues
+  });
 
-socket.emit('join',{name,room},()=>{
+  setName(name);
+  setRoom(room);
 
-});
-return ()=>{
-  socket.emit('disconnect');
-  socket.off();
-}
-    },[ENDPOINT,location.search]);
+  socket.emit('join', { name, room }, (error) => {
+    if (error) {
+      alert(error);
+    }
+  });
 
-    useEffect(()=>{
-      socket.on('message',(message)=>{
-setMessages([...messages,message]);
-      })
-      socket.on("roomData", ({ users }) => {
-      setUsers(users);
-    });
-    },[messages]);
+  return () => {
+    socket.disconnect();
+    socket.off();
+  };
+}, [ENDPOINT, location.search]);
+
+useEffect(() => {
+  socket.on('message', (message) => {
+    setMessages((prevMessages) => [...prevMessages, message]);
+  });
+
+  socket.on("roomData", ({ users }) => {
+    setUsers(users);
+  });
+
+  return () => {
+    socket.off('message');
+    socket.off('roomData');
+  };
+}, []);
+
 
     const sendMessage = (event)=>{
       event.preventDefault();
