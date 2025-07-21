@@ -1,13 +1,15 @@
 .messages {
   flex: 1;
-  padding: 0px;
+  padding: 10px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 
   background-image: url('https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  position: relative; /* Not fixed */
-  margin-top:-2px;
+  position: relative;
+  /* Remove margin-top to prevent layout jump */
 }
